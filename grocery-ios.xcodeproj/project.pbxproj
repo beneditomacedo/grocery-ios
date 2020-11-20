@@ -11,6 +11,8 @@
 		31775118256884A100E0876F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31775117256884A100E0876F /* ContentView.swift */; };
 		3177511A256884A300E0876F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31775119256884A300E0876F /* Assets.xcassets */; };
 		3177511D256884A300E0876F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3177511C256884A300E0876F /* Preview Assets.xcassets */; };
+		317751262568868300E0876F /* OCRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317751252568868300E0876F /* OCRView.swift */; };
+		31775129256886E000E0876F /* PurchaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31775128256886E000E0876F /* PurchaseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		31775119256884A300E0876F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3177511C256884A300E0876F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3177511E256884A300E0876F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		317751252568868300E0876F /* OCRView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRView.swift; sourceTree = "<group>"; };
+		31775128256886E000E0876F /* PurchaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 				31775119256884A300E0876F /* Assets.xcassets */,
 				3177511E256884A300E0876F /* Info.plist */,
 				3177511B256884A300E0876F /* Preview Content */,
+				317751252568868300E0876F /* OCRView.swift */,
+				31775128256886E000E0876F /* PurchaseView.swift */,
 			);
 			path = "grocery-ios";
 			sourceTree = "<group>";
@@ -138,8 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				317751262568868300E0876F /* OCRView.swift in Sources */,
 				31775118256884A100E0876F /* ContentView.swift in Sources */,
 				31775116256884A100E0876F /* grocery_iosApp.swift in Sources */,
+				31775129256886E000E0876F /* PurchaseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
