@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct OCRView: View {
+struct QRCodeView: View {
     var body: some View {
         Color.red
     }
@@ -15,6 +15,6 @@ struct OCRView: View {
 
 struct OCRView_Previews: PreviewProvider {
     static var previews: some View {
-        OCRView()
+        QRCodeView()
     }
 }

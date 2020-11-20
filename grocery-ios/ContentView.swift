@@ -10,10 +10,10 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
-            OCRView()
+            QRCodeView()
                 .tabItem {
                     Image(systemName: "camera.fill")
-                    Text("OCR")
+                    Text("QR Code")
                 }
             PurchaseView()
                 .tabItem {
