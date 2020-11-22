@@ -10,6 +10,11 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
+            ListOfItemsView()
+                .tabItem {
+                    Image(systemName: "list.bullet.rectangle")
+                    Text("Listas")
+                }
             QRCodeView()
                 .tabItem {
                     Image(systemName: "camera.fill")
