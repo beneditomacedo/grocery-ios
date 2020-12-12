@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct PurchaseView: View {
+    let scannedCode: String
+    
     var body: some View {
-        Color.blue
+        Text(scannedCode)
     }
 }
 
 struct PurchaseView_Previews: PreviewProvider {
     static var previews: some View {
-        PurchaseView()
+        PurchaseView(scannedCode: "Teste")
     }
 }

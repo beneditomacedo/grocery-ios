@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		310B583425732B8800EBF5ED /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 310B583325732B8800EBF5ED /* CodeScanner */; };
 		31775116256884A100E0876F /* grocery_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31775115256884A100E0876F /* grocery_iosApp.swift */; };
 		31775118256884A100E0876F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31775117256884A100E0876F /* ContentView.swift */; };
 		3177511A256884A300E0876F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31775119256884A300E0876F /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				310B583425732B8800EBF5ED /* CodeScanner in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +96,9 @@
 			dependencies = (
 			);
 			name = "grocery-ios";
+			packageProductDependencies = (
+				310B583325732B8800EBF5ED /* CodeScanner */,
+			);
 			productName = "grocery-ios";
 			productReference = 31775112256884A100E0876F /* grocery-ios.app */;
 			productType = "com.apple.product-type.application";
@@ -121,6 +126,9 @@
 				Base,
 			);
 			mainGroup = 31775109256884A000E0876F;
+			packageReferences = (
+				310B583225732B8800EBF5ED /* XCRemoteSwiftPackageReference "CodeScanner" */,
+			);
 			productRefGroup = 31775113256884A100E0876F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -340,6 +348,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		310B583225732B8800EBF5ED /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		310B583325732B8800EBF5ED /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 310B583225732B8800EBF5ED /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3177510A256884A000E0876F /* Project object */;
 }

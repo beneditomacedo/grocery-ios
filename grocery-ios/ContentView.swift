@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
         TabView {
             ListOfItemsView()
@@ -20,7 +21,7 @@ struct ContentView: View {
                     Image(systemName: "camera.fill")
                     Text("QR Code")
                 }
-            PurchaseView()
+            PurchaseView(scannedCode: "menu")
                 .tabItem {
                     Image(systemName: "cart.fill")
                     Text("Compras")
