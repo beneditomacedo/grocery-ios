@@ -39,18 +39,18 @@ struct QRCodeView: View {
                 }) {
                     Image(systemName: "multiply")
                 }
-                .padding()
-                .font(.title)
-                
+
                 Spacer()
+                
                 Button(action: {
                     print("button 2 presssed")
                 }) {
                     Image(systemName: "bolt.slash.fill")
                 }
-                .padding()
-                .font(.title)
             }
+            .padding(EdgeInsets(top: 15, leading: 15, bottom: 1, trailing: 15))
+            .font(.title2)
+            
             CodeScannerView(
                 codeTypes: [.qr],
                 completion: { result in
