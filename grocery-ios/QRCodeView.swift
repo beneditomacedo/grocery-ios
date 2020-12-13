@@ -32,15 +32,35 @@ struct QRCodeView: View {
     }
     
     var scannerSheet: some View {
-        CodeScannerView(
-            codeTypes: [.qr],
-            completion: { result in
-                if case let .success(code) = result {
-                    self.scannedCode = code
-                    self.isPresentingScanner = false
+        VStack {
+            HStack {
+                Button(action: {
+                    print("button 1 presssed")
+                }) {
+                    Image(systemName: "multiply")
                 }
+                .padding()
+                .font(.title)
+                
+                Spacer()
+                Button(action: {
+                    print("button 2 presssed")
+                }) {
+                    Image(systemName: "bolt.slash.fill")
+                }
+                .padding()
+                .font(.title)
             }
-        )
+            CodeScannerView(
+                codeTypes: [.qr],
+                completion: { result in
+                    if case let .success(code) = result {
+                        self.scannedCode = code
+                        self.isPresentingScanner = false
+                    }
+                }
+            )
+        }
     }
 }
 
